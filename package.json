@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-mentoring-2017",
+  "version": "0.1.0",
+  "description": "Homeworks for Node.js Mentoring 2017 ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolay-borzov/nodejs-mentoring-2017.git"
+  },
+  "author": "Nikolay Borzov <nikolay.n.borzov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikolay-borzov/nodejs-mentoring-2017/issues"
+  },
+  "homepage": "https://github.com/nikolay-borzov/nodejs-mentoring-2017#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
