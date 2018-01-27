@@ -1,0 +1,5 @@
+{
+  "name": "NodeMP HW App",
+  "importPath": "./data",
+  "outputPath": "./imported"
+}
