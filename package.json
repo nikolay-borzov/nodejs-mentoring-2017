@@ -4,7 +4,8 @@
   "description": "Homeworks for Node.js Mentoring 2017 ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
+    "start:sync": "nodemon index.js --sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,17 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.14.11"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*",
+      "imported/*"
+    ],
+    "delay": "700"
+  },
+  "dependencies": {
+    "chokidar": "^2.0.0"
   }
 }

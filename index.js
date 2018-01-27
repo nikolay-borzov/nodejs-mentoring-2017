@@ -1,8 +1,9 @@
-var config = require('./config/config.json')
+const config = require('./config')
+const DirWatcher = require('./dirwatcher')
+const Importer = require('./importer')
 
-console.log(config.name)
+const watcher = new DirWatcher()
+const importer = new Importer({ outputPath: config.outputPath })
 
-var models = require('./models')
-
-new models.User()
-new models.Product()
+watcher.watch(config.importPath, 3000)
+importer.listen(watcher, process.argv[2] === '--sync')
